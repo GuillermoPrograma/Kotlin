@@ -29,6 +29,15 @@ fun main() {
                 val prioridad: Int = readln().toInt();
                 println("Disponible :")
                 val disponible: Boolean = readln().toBoolean();
+                println("1-Evento 2-Recordatorio")
+                val numElegir = readln().toInt();
+                when(numElegir)
+                {
+                    1-> {val día: Int = readln().toInt();
+                    }
+                }
+
+
                 gestor1.MeterTarea(descripcion,prioridad,disponible);}
 
             2->{ println("Prioridad de Tarea que deseas eliminar")
