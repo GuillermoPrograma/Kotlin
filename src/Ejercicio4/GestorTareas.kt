@@ -4,8 +4,16 @@ class GestorTareas {
 
     val listaTareas: MutableList<Tarea> = mutableListOf();
 
-    fun MeterTarea(descripcion: String, prioridad: Int, disponible: Boolean) {
-        listaTareas.add(Tarea(descripcion, prioridad, disponible));
+    fun MeterTarea(descripcion: String, prioridad: Int, disponible: Boolean,  dia: Int?,  hora:  String?) {
+    when
+    { dia != null -> listaTareas.add(Evento(descripcion, prioridad, disponible,dia))
+        hora != null -> listaTareas.add(Recordatorio(descripcion, prioridad, disponible,hora))
+        else -> println("Los dos no pueden estar a null")
+
+    }
+
+
+
     }
 
     fun EliminoTarea(prioridad: Int) {
@@ -17,8 +25,6 @@ class GestorTareas {
                 iterador.remove();
             }
         }
-
-
     }
 
     fun BuscoTareasPrioridad(prioridad: Int) {

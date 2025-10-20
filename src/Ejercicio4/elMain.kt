@@ -33,12 +33,17 @@ fun main() {
                 val numElegir = readln().toInt();
                 when(numElegir)
                 {
-                    1-> {val día: Int = readln().toInt();
+                    1-> {println("Mete el día del Evento")
+                        val dia: Int = readln().toInt();
+                        gestor1.MeterTarea(descripcion,prioridad,disponible, dia,null)
                     }
+                    2-> {println("Mete la hora del evento")
+                        val hora: String = readln();
+                    gestor1.MeterTarea(descripcion,prioridad,disponible, null,hora)}
                 }
 
 
-                gestor1.MeterTarea(descripcion,prioridad,disponible);}
+            }
 
             2->{ println("Prioridad de Tarea que deseas eliminar")
                 val prioridad: Int = readln().toInt();
