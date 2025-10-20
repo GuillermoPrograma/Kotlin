@@ -23,7 +23,7 @@ class GestorTareas {
 
     fun BuscoTareasPrioridad(prioridad: Int) {
         //val prioridad: Int = readln().toInt();
-        // println("Dime la prioridad de las tareas que quieres buscar :")
+        // println("Dime la prioridad de las tareas que quieres buscar  :")
 
         for (tarea in listaTareas) {
             if (tarea.prioridad == prioridad) {
