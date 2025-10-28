@@ -7,7 +7,7 @@ fun main() {
     val gestor1 = GestorTareas();
 
     var bucle : Boolean = true;
-    while (bucle == true)
+    while (bucle == true) //bucle
     {
         println("Menu : ")
         println("""
